@@ -1,0 +1,297 @@
+body {
+    font-family: Tahoma, sans-serif;
+    color: #493251; /* Slightly muted dark purple for better readability */
+    letter-spacing: 1px;
+}
+
+h1, h2 {
+    font-weight: normal;
+    color: #333; /* Darker color for headings for better contrast */
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 0px auto;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(249, 247, 247, 0.5);
+    padding: 0 0 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(239, 232, 246, 0.7); /* Light purple with 70% opacity */
+  }
+  
+  
+#page-banner {
+    background: linear-gradient(90deg, #b18ea7, #5e366c); /* Softer gradient */
+    padding: 10px 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+#page-banner h1, #page-banner p {
+    width: 100%;
+    text-align: center;
+    margin: 0px 0;
+    letter-spacing: 3px; /* Increase space between letters */
+
+}
+
+#page-banner input {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #e0d3e6; /* Darker input text */
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#list, #add, #tabbed-content {
+    margin: 30px;
+    list-style-type: none;
+}
+
+#list ul, #tabbed-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#list li {
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+    background-color: #f9f9f9; /* Light background for each list item */
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgba(254, 253, 253, 0.5);
+}
+
+#list li:hover {
+    border-color: #9b61bf; /* Keep the border color as is or adjust to a shade of purple */
+    background-color: #e6d5f7; /* Light purple shade for the hover effect */
+    transform: scale(1.02); /* Slightly scale up on hover */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.delete, .done, .note-toggle{
+    float: right;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.delete {
+    background: #e54820;
+}
+
+.delete:hover {
+    background: #e87878; /* Darker red on hover */
+}
+
+.done {
+    background: #6c4584;
+    
+    font-size: 1.1em; /* Adjust the size to your preference */
+    
+}
+
+.done:hover {
+    background: #b70af1; /* Darker blue on hover */
+}
+
+#add {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#add input {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+    outline: none;
+}
+
+#add button {
+    border: 1px solid #9b61bf;
+    background: #6c4584;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+    margin: 20px 0;
+    border-left: 0;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#add button:hover {
+    background: #9b61bf; 
+}
+
+#add:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#tabbed-content li {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+#tabbed-content li:hover {
+    background: #9261bf; /* Change to a teal hover effect */
+    color: white;
+}
+
+#tabbed-content .tab {
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .tab.active {
+    display: block;
+    background: #e0f7fa; /* Light cyan for active tab */
+}
+
+.header, .title, .title2 {
+    color: #310231; /* Matches the color of "Achieve your goals" */
+    font-weight: bold;
+    text-align: center;
+}
+
+.note {
+    display: none; /* Initially hidden */
+    width: 50%; /* Reduced width to make it smaller */
+    margin: 10px auto; /* Center the note with auto margins */
+    padding: 10px; /* Reduced padding for a smaller appearance */
+    border: 1px solid #9b61bf; /* Match color theme */
+    border-radius: 4px; /* Smooth corners */
+    background-color: #f8f5fa; /* Light background for better readability */
+    color: #333; /* Text color for contrast */
+    font-size: 14px; /* Legible font size */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    resize: vertical; /* Allow users to resize vertically */
+}
+.note-toggle {
+    background: #6c4584; /* Green for positive action */
+    font-size: 15px; /* Smaller text for a secondary action */
+}
+
+.note-toggle:hover {
+    background: #8345a0; /* Slightly darker green on hover */
+}
+
+  /* Style for the hint text */
+.edit-hint {
+    font-size: 12px; /* Smaller font size */
+    color: #555; /* Dark gray color */
+    margin-top: 5px; /* Space above the hint */
+    font-style: italic; /* Optional: makes the hint text italic */
+    opacity: 0.7; /* Slight transparency */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+  
+  /* Hover effect for the hint */
+  #list li:hover .edit-hint{
+    opacity: 1; /* Fully visible when the list item is hovered */
+  }
+/*  styles for the navigation bar */
+#nav-container {
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    color: #310231; /* Retain text color */
+    padding: 20px; /* Adjusted padding for better spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow on the right for left-aligned bar */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+    font-family: 'Lato', sans-serif; /* Set a modern font */
+    font-size: 16px; /* Adjusted font size for better readability */
+    position: fixed; /* Fixes the navigation to the left side */
+    top: 0; /* Aligns to the top */
+    left: 0; /* Aligns to the left */
+    height: 100%; /* Full screen height */
+    width: 238px; /* Smaller width of the navigation bar */
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: flex-start; /* Align the content to the top */
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* Navigation links styling */
+#nav-container nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange links vertically */
+    width: 100%; /* Ensure the links span the full width */
+}
+
+#nav-container nav ul li {
+    width: 100%; /* Ensure list items span the full width */
+    margin: 30px 0; /* Add margin for space between links */
+}
+
+#nav-container nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    letter-spacing: 4px; /* Increase space between letters */
+}
+
+/*#nav-container nav ul li a:hover {
+    color: #fff; 
+    background: linear-gradient(90deg, rgba(177, 142, 167, 0.5), rgba(94, 54, 108, 0.5)); 
+    border-radius: 0; 
+    padding: 0; 
+    display: inline; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}*/
+/* Optional: Active navigation link */
+#nav-container nav ul li a.active {
+    color:#ffffff; /* Change text color to match the bar */
+}
+#nav-container nav ul li:hover {
+    padding: 20px;
+    border-left: 5px solid rgba(221, 221, 221, 0.5); /* Semi-transparent border */
+    margin: 20px 10px;
+    background-color: rgba(249, 249, 249, 0.3); /* Transparent light background */
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+    transition: background-color 0.3s, transform 0.3s;
+    transform: scale(1.02); /* Slightly enlarge the list item */
+}
+#nav-container nav ul li a {
+    display: block; /* Makes the <a> tag fill the <li> element */
+    width: 100%; /* Ensures the <a> spans the entire width of the <li> */
+    height: 100%; /* Ensures the <a> spans the entire height of the <li> */
+}
+#search {
+    color: black !important; /* Text color forced to black */
+}

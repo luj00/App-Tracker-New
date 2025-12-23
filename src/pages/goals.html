@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/styles.css" rel="stylesheet" />
+<link href="../styles/formStyles.css" rel="stylesheet" />
+
+    <title> My Goals</title>
+</head>
+<body>
+    <!-- Starry Background Elements -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- Title Text -->
+    <div id="title">
+        <span></span><br>
+        <span></span>
+    </div>
+
+    <div id="nav-container">
+        <nav>
+            <ul>
+                <li><a href="home.html">My profile</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="reminders.html">Reminders</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">Achieve your goals</h1>
+                <p class="header">🤍List the goals that will make you a better person🤍</p>
+                <form id="search">
+                <input type="text" id="search" placeholder="Search goals..." />
+                <ul id="list"></ul>
+                </form>
+            </div>
+        </header>
+        <div id="list">
+            <h2 class="title2">My goals</h2>
+            <ul>
+                <!-- List of goals will appear here -->
+            </ul>
+        </div>
+        <form id="add">
+            <input type="text" id="input" name="name" placeholder="Add a goal..." />
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <!-- Include goals.js -->
+<script type="module" src="../js/goals.js"></script>
+
+</body>
+</html>

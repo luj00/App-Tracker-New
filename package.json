@@ -1,0 +1,28 @@
+{
+  "name": "app-tracker",
+  "version": "1.0.0",
+  "description": "A personal tracker app for goals and reminders",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/styles/styles.scss:src/styles/styles.css",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "tracker",
+    "goals",
+    "reminders"
+  ],
+  "author": "Lujain Mansour",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.83.0",
+    "vite": "^7.2.2"
+  },
+  "dependencies": {
+    "firebase": "^10.7.1"
+  }
+}
